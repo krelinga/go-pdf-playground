@@ -30,7 +30,7 @@ func runDemos(demos []*demo, outputDir string) error {
     if err := os.RemoveAll(outputDir); err != nil {
         return fmt.Errorf("error removing %s: %w", outputDir, err)
     }
-    if err := os.MkdirAll(outputDir, 755); err != nil {
+    if err := os.MkdirAll(outputDir, 0755); err != nil {
         return fmt.Errorf("error creating %s: %w", outputDir, err)
     }
 
