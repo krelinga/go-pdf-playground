@@ -11,7 +11,7 @@ import (
     demo_blankpage "github.com/krelinga/go-pdf-playground/internal/demos/blankpage"
 )
 
-const outputDir = "/host/go-pdf-playground"
+const outputDir = "/host/test/go-pdf-playground"
 
 type demo struct {
     Name string
