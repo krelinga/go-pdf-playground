@@ -13,6 +13,7 @@ import (
     demo_shapes "github.com/krelinga/go-pdf-playground/internal/demos/shapes"
     demo_templates "github.com/krelinga/go-pdf-playground/internal/demos/templates"
     demo_fontwidth "github.com/krelinga/go-pdf-playground/internal/demos/fontwidth"
+    demo_templatecompose "github.com/krelinga/go-pdf-playground/internal/demos/templatecompose"
 )
 
 const outputDir = "/host/test/go-pdf-playground"
@@ -42,6 +43,10 @@ var demos = []*demo{
     &demo{
         Name: "fontwidth",
         Run: demo_fontwidth.Run,
+    },
+    &demo{
+        Name: "templatecompose",
+        Run: demo_templatecompose.Run,
     },
 }
 
