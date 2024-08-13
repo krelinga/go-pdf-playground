@@ -11,6 +11,7 @@ import (
     demo_blankpage "github.com/krelinga/go-pdf-playground/internal/demos/blankpage"
     demo_helloworld "github.com/krelinga/go-pdf-playground/internal/demos/helloworld"
     demo_shapes "github.com/krelinga/go-pdf-playground/internal/demos/shapes"
+    demo_templates "github.com/krelinga/go-pdf-playground/internal/demos/templates"
 )
 
 const outputDir = "/host/test/go-pdf-playground"
@@ -32,6 +33,10 @@ var demos = []*demo{
     &demo{
         Name: "shapes",
         Run: demo_shapes.Run,
+    },
+    &demo{
+        Name: "templates",
+        Run: demo_templates.Run,
     },
 }
 
